@@ -87,9 +87,9 @@ celerybeat-schedule.*
 *.sage.py
 # Environments
 .env
-.venv_tdd
+.venv
 env/
-venv_tdd/
+venv/
 ENV/
 env.bak/
 venv.bak/
@@ -119,5 +119,4 @@ GitHub.sublime-settings
 !.vscode/extensions.json
 .history
 
-/venv_tdd
-/venv_tdd/
+venv_tdd/
