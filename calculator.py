@@ -5,6 +5,11 @@ def sum_sum(x, y):
     ##:
     >>> sum_sum(10, 30)
     41
+
+    >>> sum_sum('10', 30)
+    Traceback (most recent call last):
+    ...
+    AssertionError: X has to be INT or FLOAT, Edson.
     """
     assert isinstance(x, (int, float)), 'X has to be INT or FLOAT, Edson.' #1: #2:
     return x + y
