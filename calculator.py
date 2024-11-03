@@ -1,8 +1,17 @@
 # FILE: /TDD/calculator.py
 
 def sum_sum(x, y):
+    """
+    ##:
+    >>> sum_sum(10, 30)
+    40
+    """
     assert isinstance(x, (int, float)), 'X has to be INT or FLOAT, Edson.' #1: #2:
     return x + y
+
+if __name__ == '__main__':
+    import doctest ##
+    doctest.testmod() ##
 
 
 # ------------------------------------------------------------------
