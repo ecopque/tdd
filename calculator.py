@@ -19,6 +19,7 @@ if __name__ == '__main__':
     doctest.testmod(verbose=True) #3: #8:
 
 
+# ------------------------------------------------------------------
 #3: Com 'verbose=True' também será apresentado no terminal os testes quando funcionarem normalmente;
 #4: Esta linha faz parte do bloco de documentação da função sum_sum(x, y). Ela é um exemplo de doctest, ou seja, um teste embutido nos comentários de docstring da função, que demonstra como a função deve se comportar quando chamada com os argumentos 10 e 30.
 #5: Serve como teste para que, ao rodar o módulo com o doctest, seja validado se a função sum_sum retorna o valor esperado com esses inputs.
