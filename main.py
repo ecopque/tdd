@@ -1,4 +1,4 @@
-# FILE: /TDD/testing.py
+# FILE: /TDD/main.py
 
 from calculator import sum_sum
 
