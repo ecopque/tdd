@@ -41,13 +41,21 @@ class TestBaconWithEggs(unittest.TestCase): #1:
 
     # Etapa 4:
     def test_bacon_with_eggs_should_return_bacon_if_input_is_a_multiple_of_3(self):
-        entries = (3, 6, 9, 12, 15, 18, 21)
+        entries = (3, 6, 9, 12, 18, 21)
         outputs = 'Bacon'
 
         for i in entries:
             with self.subTest(i=i, outputs=outputs):
                 self.assertEqual(bacon_with_eggs(i), (outputs))
-    
+
+    # Etapa 5:
+    def test_bacon_with_eggs_should_return_eggs_if_input_is_a_multiple_of_5(self):
+        entries = (5, 10, 20, 25)
+        outputs = 'Eggs'
+
+        for i in entries:
+            with self.subTest(i=i, outputs=outputs):
+                self.assertEqual(bacon_with_eggs(i), (outputs))
 
     
 unittest.main(verbosity=2)
