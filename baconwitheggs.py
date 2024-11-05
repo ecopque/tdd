@@ -9,7 +9,6 @@
     Bacon
 5. Saber se o número é múltiplo somente de 5:
     Ovos
-
 '''
 
 def bacon_with_eggs(n):
