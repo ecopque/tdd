@@ -61,7 +61,7 @@ class TestBaconWithEggs(unittest.TestCase): #1:
 unittest.main(verbosity=2)
 
 
-
+# ------------------------------------------------------------------
 #1:Primeira etapa, pelo que entendi, precisamos criar uma classe em 'test_baconwitheggs' onde vamos enviar para 'baconwitheggs' uma string, quando só é permitido enviar números inteiros. Quando o erro se apresentar, alcançamos o nosso objetivo;
 #2: Esse é um método de teste no módulo de testes /TDD/test_baconwitheggs.py, criado para validar o comportamento de bacon_with_eggs quando a entrada é múltipla de 3 e 5. Seguindo o ciclo TDD, este teste é executado para garantir que a função bacon_with_eggs no outro módulo está retornando o valor esperado ("Bacon with eggs") para múltiplos de 3 e 5.
 #3: Esse for itera pela tupla entries, que contém números que devem todos ser múltiplos de 3 e 5 (15, 30, 45, 60). Cada valor em entries é atribuído a i em cada iteração, sendo usado como entrada para a função bacon_with_eggs.
