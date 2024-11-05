@@ -31,6 +31,7 @@ class TestCalculator(unittest.TestCase):
 unittest.main(verbosity=2) #8:
 
 
+# ------------------------------------------------------------------
 #1: Os nomes devem ser enormes? Parece que por convenção, sim!
 #2: Esta linha importa o módulo unittest, que faz parte da biblioteca padrão do Python e fornece ferramentas para escrever e rodar testes unitários. Esse módulo é necessário para que o código possa definir e executar testes de maneira estruturada e automática.
 #3: Esta é a definição de um método de teste dentro da classe TestCalculator. O nome do método (test_sum_5_and_5_should_return_10) sugere que ele verifica se a função sum_sum retorna o valor correto (10) ao somar 5 + 5. No contexto do módulo, ele é um dos métodos que testam o comportamento esperado da função sum_sum.
