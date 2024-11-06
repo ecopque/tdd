@@ -3,7 +3,6 @@
 import unittest
 from person import Person
 
-
 class TestPerson(unittest.TestCase):
     def setUp(self): ##
         self.p1 = Person('Edson', 'Copque')
@@ -21,7 +20,7 @@ class TestPerson(unittest.TestCase):
         self.assertIsInstance(self.p1.last_name, str)
 
     def test_person_attr_data_obtained_starts_false(self):
-        self.assertFalse(self.p1.data_obtained)
+        self.assertFalse(self.p1.data_obtained) ##
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
