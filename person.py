@@ -9,10 +9,9 @@ class Person:
         self.data_obtained = False
 
     def get_all_data(self):
-        response = requests.get('https://www.google.com')
-        if response.ok:
+        response = requests.get('https://www.google.com') ##
+        if response.ok: ##
             return 'Connected'
-
 
 
 # https://linktr.ee/edsoncopque
