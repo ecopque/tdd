@@ -2,6 +2,7 @@
 
 import unittest
 from person import Person
+from unittest.mock import patch #1: ##
 
 class TestPerson(unittest.TestCase):
     def setUp(self): ##
@@ -23,10 +24,13 @@ class TestPerson(unittest.TestCase):
         self.assertFalse(self.p1.data_obtained) ##
 
     def test_get_all_data_success_OK(self):
-        ...
+        with patch('request.get'):
+            ...
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
 
+
+#1: Com este módulo terei possibilidade de criar dados fakes;
 
 # https://linktr.ee/edsoncopque
