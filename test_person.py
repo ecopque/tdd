@@ -32,6 +32,7 @@ if __name__ == '__main__':
     unittest.main(verbosity=2)
 
 
+# ------------------------------------------------------------------
 #1: Com este módulo terei possibilidade de criar dados fakes;
 #2: A linha importa o módulo patch da biblioteca unittest.mock, que é usado para substituir partes do código por objetos falsos (mock) durante os testes. Isso permite simular comportamentos de componentes externos sem realmente executar o código de rede ou outros sistemas dependentes.
 #3: Este método é executado antes de cada teste na classe TestPerson. Ele serve para preparar o ambiente de teste, criando uma instância da classe Person com os parâmetros 'Edson' e 'Copque'. Esse método é útil para evitar repetição de código, garantindo que cada teste tenha o mesmo ponto de partida. Aqui, ele cria o objeto p1 que será utilizado nos testes subsequentes.
