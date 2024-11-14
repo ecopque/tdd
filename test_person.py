@@ -24,8 +24,9 @@ class TestPerson(unittest.TestCase):
         self.assertFalse(self.p1.data_obtained) ##
 
     def test_get_all_data_success_OK(self):
-        with patch('request.get'):
-            ...
+        with patch('requests.get') as fake_request: ##
+            fake_request.return_value.ok = True ##
+            self.assertEqual(self.p1.get_all_data(), 'Connected') ##
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
