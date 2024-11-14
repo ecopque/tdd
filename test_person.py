@@ -22,7 +22,7 @@ class TestPerson(unittest.TestCase):
     def test_person_attr_data_obtained_starts_false(self):
         self.assertFalse(self.p1.data_obtained) ##
 
-    def test_get_all_data_success_ok(self):
+    def test_get_all_data_success_OK(self):
         ...
 
 if __name__ == '__main__':
