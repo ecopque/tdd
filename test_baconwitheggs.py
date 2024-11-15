@@ -57,8 +57,9 @@ class TestBaconWithEggs(unittest.TestCase): #1:
             with self.subTest(i=i, outputs=outputs):
                 self.assertEqual(bacon_with_eggs(i), (outputs))
 
-    
-unittest.main(verbosity=2)
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
 
 
 # ------------------------------------------------------------------
