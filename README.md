@@ -17,3 +17,4 @@ This project is ideal for those looking to understand the practical application 
 ## Images of the E-commerce Project
 ![readme](https://github.com/ecopque/tdd/blob/main/prints/Screenshot%20from%202024-11-15%2011-13-46.png)
 ![readme](https://github.com/ecopque/tdd/blob/main/prints/Screenshot%20from%202024-11-15%2011-14-07.png)
+![readme](https://github.com/ecopque/tdd/blob/main/prints/qrcode_linktree_edson_copque2.png)
