@@ -12,6 +12,13 @@ Refactor cicle
 . Parte 3: Melhorar meu código.
 """
 
+try:
+    import sys
+    import os
+    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../'))) ##
+except:
+    raise
+
 import unittest
 from baconwitheggs import bacon_with_eggs
 
