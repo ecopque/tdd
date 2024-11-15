@@ -67,6 +67,7 @@ def iterate2(sequence: Iterable[int]): #I: #19:
 print(iterate2([1, 2, 3]))
 
 
+# ------------------------------------------------------------------
 #1: No caso das tuplas, tenho que informar que cada um é 'int'. Ver outro exemplo.
 #2: Observando o #1, agora neste exemplo está correto.
 #3: Com '[str, str]' estou informando que a chave e dicionário são strings.
