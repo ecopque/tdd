@@ -1,8 +1,8 @@
 # FILE: /TDD/typehints1.py
 
 # pip install mypy
-from typing import List, Union, Tuple, Dict, Any #A: #B: #C:
-#A: List | #B: Union | #C: Tuple | #D: Dict | E: Any
+from typing import List, Union, Tuple, Dict, Any, NewType
+#A: List | #B: Union | #C: Tuple | #D: Dict | E: Any | #F: NewType
 
 # primitive
 number: int = 10
@@ -36,6 +36,9 @@ person: Dict[str, Union[str, int]] = {'name': 'Edson', 'lastname': 'Copque', 'ag
 person: Dict[str, Union[str, int, List[int]]] = {'name': 'Edson', 'lastname': 'Copque', 'age': 90, 'list': [1, 2, 3]} #B: #A: ##
 person: Dict[str, Any] = {'name': 'Edson', 'lastname': 'Copque', 'age': 90} #E: #5: ##
 
+# my type
+my_dict = Dict[str, Union[str, int, List[int]]] #alias
+person: my_dict = {'name': 'Edson', 'lastname': 'Copque', 'age': 90, 'list': [1, 2, 3]} #6:
 
 
 #1: No caso das tuplas, tenho que informar que cada um é 'int'. Ver outro exemplo.
@@ -43,5 +46,6 @@ person: Dict[str, Any] = {'name': 'Edson', 'lastname': 'Copque', 'age': 90} #E: 
 #3: Com '[str, str]' estou informando que a chave e dicionário são strings.
 #4: Agora temos as chaves como string, e os valores podem ser string ou int.
 #5: Também podemos informar 'Any', mas parece não ser uma boa prática.
+#6: Agora fica mais fácil ao usar 'my_dict'.
 
 # https://linktr.ee/edsoncopque
