@@ -14,7 +14,7 @@ This project explores the use of Test-Driven Development (TDD) methodology along
 
 This project is ideal for those looking to understand the practical application of TDD in Python, combining it with type hints to improve code quality and maintainability.
 
-## Images of the E-commerce Project
+## Images of the project
 ![readme](https://github.com/ecopque/tdd/blob/main/prints/Screenshot%20from%202024-11-15%2011-13-46.png)
 ![readme](https://github.com/ecopque/tdd/blob/main/prints/Screenshot%20from%202024-11-15%2011-14-07.png)
 ![readme](https://github.com/ecopque/tdd/blob/main/prints/qrcode_linktree_edson_copque2.png)
