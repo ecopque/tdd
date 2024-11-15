@@ -1,5 +1,12 @@
 # FILE: /TDD/tests/test_calculator.py
 
+try:
+    import os
+    import sys
+    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
+except:
+    raise
+
 import unittest #2:
 from calculator import sum_sum
 

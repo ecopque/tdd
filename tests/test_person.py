@@ -1,5 +1,12 @@
 # FILE: /TDD/tests/test_person.py
 
+try:
+    import os
+    import sys
+    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
+except:
+    raise
+
 import unittest
 from person import Person
 from unittest.mock import patch #1: #2:
