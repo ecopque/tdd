@@ -1,4 +1,4 @@
-# FILE: /TDD/test_person.py
+# FILE: /TDD/tests/test_person.py
 
 import unittest
 from person import Person
