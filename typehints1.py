@@ -2,7 +2,7 @@
 
 # pip install mypy
 from typing import List, Union, Tuple, Dict, Any, NewType, Callable, Sequence, Iterable
-#A: List | #B: Union | #C: Tuple | #D: Dict | E: Any | #F: NewType | #G: Callable | #H: Sequence | #I:
+#A: List | #B: Union | #C: Tuple | #D: Dict | E: Any | #F: NewType | #G: Callable | #H: Sequence | #I: Iterable
 
 # primitive
 number: int = 10
