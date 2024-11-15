@@ -15,7 +15,7 @@ class TestCalculator(unittest.TestCase):
             (10, 10, 20),
             (15, 15, 30),
             (15.5, 15.5, 31.0),
-            (10, 10, 25),
+            (10, 10, 25), #
             (1, 2, 3),
         )
 
@@ -28,7 +28,8 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(AssertionError): #7:
             sum_sum('10', 5)
 
-unittest.main(verbosity=2) #8:
+if __name__ == '__main__':
+    unittest.main(verbosity=2) #8:
 
 
 # ------------------------------------------------------------------
