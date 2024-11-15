@@ -68,6 +68,7 @@ if __name__ == '__main__':
     unittest.main(verbosity=2)
 
 
+# ------------------------------------------------------------------
 #6: sys.path.append(...): sys.path é uma lista de diretórios que o Python verifica para procurar módulos e pacotes ao fazer importações. A função append() adiciona um novo diretório ao final de sys.path, tornando-o disponível para importações no código. Este diretório é o resultado da expressão dentro de append(...). os.path.abspath(...): os.path.abspath() converte um caminho em um caminho absoluto. Isso significa que ele transforma o caminho fornecido em um caminho completo que começa na raiz do sistema de arquivos (por exemplo, /home/usuario/... no Linux ou C:\Users\usuario\... no Windows). Nesse caso, o caminho absoluto é gerado para o diretório ../ (o diretório pai) do diretório onde o arquivo atual está localizado. os.path.join(os.path.dirname(__file__), '../'): __file__ é uma variável especial que contém o caminho do arquivo atual. os.path.dirname(__file__) obtém o diretório onde o arquivo atual está localizado. os.path.join(...) combina o diretório do arquivo atual com ../, que representa o diretório pai. Então, os.path.join(os.path.dirname(__file__), '../') gera o caminho do diretório pai do arquivo atual.
 # ------------------------------------------------------------------
 #1:Primeira etapa, pelo que entendi, precisamos criar uma classe em 'test_baconwitheggs' onde vamos enviar para 'baconwitheggs' uma string, quando só é permitido enviar números inteiros. Quando o erro se apresentar, alcançamos o nosso objetivo;
