@@ -1,8 +1,8 @@
 # FILE: /TDD/typehints1.py
 
 # pip install mypy
-from typing import List, Union, Tuple, Dict, Any, NewType
-#A: List | #B: Union | #C: Tuple | #D: Dict | E: Any | #F: NewType
+from typing import List, Union, Tuple, Dict, Any, NewType, Callable, Sequence, Iterable
+#A: List | #B: Union | #C: Tuple | #D: Dict | E: Any | #F: NewType | #G: Callable | #H: Sequence | #I:
 
 # primitive
 number: int = 10
@@ -39,6 +39,32 @@ person: Dict[str, Any] = {'name': 'Edson', 'lastname': 'Copque', 'age': 90} #E: 
 # my type
 my_dict = Dict[str, Union[str, int, List[int]]] #alias
 person: my_dict = {'name': 'Edson', 'lastname': 'Copque', 'age': 90, 'list': [1, 2, 3]} #6:
+
+# My new type
+userid_ = NewType('userid_', int) ##
+userid_var = userid_(123456789) ##
+
+def returns_function(function: Callable[[int, int], int]) -> Callable: #G: ##
+    return function
+def sum_sum(x: int, y: int) -> int:
+    return x + y
+print(returns_function(sum_sum)(10, 15))
+
+class Person:
+    def __init__(self, name: str, lastname: str, age: int) -> None:
+        self.name: str = name
+        self.lastname: str = lastname
+        self.age: int = age
+    def speaking(self) -> None:
+        print(f'{self.name} {self.lastname} is speaking... ')
+
+def iterate(sequence: Sequence[int]): #H: ##
+    return [x * 2 for x in sequence]
+print(iterate([1, 2, 3]))
+
+def iterate2(sequence: Iterable[int]): #I: ##
+    return [x for x in sequence]
+print(iterate2([1, 2, 3]))
 
 
 #1: No caso das tuplas, tenho que informar que cada um é 'int'. Ver outro exemplo.
