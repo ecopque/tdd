@@ -15,7 +15,7 @@ Refactor cicle
 try:
     import sys
     import os
-    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../'))) ##
+    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../'))) #6:
 except:
     raise
 
@@ -64,11 +64,11 @@ class TestBaconWithEggs(unittest.TestCase): #1:
             with self.subTest(i=i, outputs=outputs):
                 self.assertEqual(bacon_with_eggs(i), (outputs))
 
-
 if __name__ == '__main__':
     unittest.main(verbosity=2)
 
 
+#6: sys.path.append(...): sys.path é uma lista de diretórios que o Python verifica para procurar módulos e pacotes ao fazer importações. A função append() adiciona um novo diretório ao final de sys.path, tornando-o disponível para importações no código. Este diretório é o resultado da expressão dentro de append(...). os.path.abspath(...): os.path.abspath() converte um caminho em um caminho absoluto. Isso significa que ele transforma o caminho fornecido em um caminho completo que começa na raiz do sistema de arquivos (por exemplo, /home/usuario/... no Linux ou C:\Users\usuario\... no Windows). Nesse caso, o caminho absoluto é gerado para o diretório ../ (o diretório pai) do diretório onde o arquivo atual está localizado. os.path.join(os.path.dirname(__file__), '../'): __file__ é uma variável especial que contém o caminho do arquivo atual. os.path.dirname(__file__) obtém o diretório onde o arquivo atual está localizado. os.path.join(...) combina o diretório do arquivo atual com ../, que representa o diretório pai. Então, os.path.join(os.path.dirname(__file__), '../') gera o caminho do diretório pai do arquivo atual.
 # ------------------------------------------------------------------
 #1:Primeira etapa, pelo que entendi, precisamos criar uma classe em 'test_baconwitheggs' onde vamos enviar para 'baconwitheggs' uma string, quando só é permitido enviar números inteiros. Quando o erro se apresentar, alcançamos o nosso objetivo;
 #2: Esse é um método de teste no módulo de testes /TDD/test_baconwitheggs.py, criado para validar o comportamento de bacon_with_eggs quando a entrada é múltipla de 3 e 5. Seguindo o ciclo TDD, este teste é executado para garantir que a função bacon_with_eggs no outro módulo está retornando o valor esperado ("Bacon with eggs") para múltiplos de 3 e 5.
