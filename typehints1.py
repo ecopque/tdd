@@ -89,4 +89,4 @@ print(iterate2([1, 2, 3]))
 #19: Iterable[int] indica que sequence é qualquer objeto iterável de inteiros. A função iterate2 recebe essa sequência e retorna uma lista com os mesmos elementos. Iterable é mais genérico que Sequence, pois inclui qualquer objeto que possa ser iterado (como listas, tuplas, conjuntos e até geradores).
 
 
-# https://linktr.ee/edsoncopque
+# Edson Copque | https://linktr.ee/edsoncopque
