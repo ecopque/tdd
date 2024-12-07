@@ -23,4 +23,4 @@ except AssertionError as error_error: #1: #3:
 #2: A vantagem é que usando 'assert' estamos nos comunicando com outros desenvolvedores, enquanto 'try'/'except' vai impedir que meu código seja interrompido;
 #3: Esta linha captura o AssertionError caso ele seja gerado ao tentar executar sum_sum('10', 10).
 
-# https://linktr.ee/edsoncopque
+# Edson Copque | https://linktr.ee/edsoncopque
